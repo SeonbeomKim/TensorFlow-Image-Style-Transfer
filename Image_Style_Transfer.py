@@ -4,6 +4,10 @@ import tensorflow as tf
 import scipy
 import os
 
+store_path = "./store/"
+content_path = './style/rain_princess.jpg'
+style_path = './style/udnie.jpg'
+
 image_height = 800#224#600
 image_width = 800#224#800
 learning_rate = 10
@@ -13,7 +17,7 @@ beta = 10
 alpha = beta * ratio
 RGB_process = np.array([123.68, 116.779, 103.939]).reshape((1,1,1,3))
 
-store_path = "./store/"
+
 
 #http://www.vlfeat.org/matconvnet/pretrained/  에서 imagenet-vgg-verydeep-19 파일다운로드.
 pretrained = sio.loadmat('./imagenet-vgg-verydeep-19.mat')
@@ -163,13 +167,13 @@ layer_info = set_vgg19_info_dict(vgg19) # {conv1_1:0, relu1_1:1, ... , fc8:41, p
 
 #content 이미지 읽고 conv 값들 계산.
 with tf.name_scope("content"):
-	content_ = read_image('./style/rain_princess.jpg')
+	content_ = read_image(content_path)
 	content, _ = vgg19_network(vgg19, tf.constant(content_), layer_info)
 
 
 #style 이미지 읽고 conv 값들 계산.
 with tf.name_scope("style"):
-	style_ = read_image('./style/udnie.jpg')
+	style_ = read_image(style_path)
 	_, style = vgg19_network(vgg19, tf.constant(style_), layer_info)
 	
 
