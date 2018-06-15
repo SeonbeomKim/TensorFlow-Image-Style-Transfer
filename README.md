@@ -33,6 +33,7 @@ TensorFlow version == 1.4
     
 ## total_cost
     * alpha * content_cost + beta * style_cost
+    * total_cost를 minimize 하면 tf.variable 형태의 trainable한 noise 이미지가 점차 학습이 됨.
 
 ## result
 |Content|Style|Result|
