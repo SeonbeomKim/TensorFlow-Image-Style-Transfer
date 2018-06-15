@@ -19,7 +19,8 @@ Image Style Transfer Using Convolutional Neural Networks
 
 ## gram_matrix
     * ex) noise_conv1_1 (shape: 1, H, W, N)
-    * flatten = tf.transpose(noise_conv1_1, [3, 1, 2, 0]) (shape: N, H, W, 1) 이 부분이 중요함. 단순히 reshape(M, N)하면 안됨.
+    * flatten = tf.transpose(noise_conv1_1, [3, 1, 2, 0]) (shape: N, H, W, 1)
+        * 이 부분이 중요함. tf.transpose 없이 reshape(M, N)하면 안됨. 그냥 하면 filter(N) 특성이 깨짐.
     * flatten = tf.reshape(flatten, (N, M)
     * gram = tf.matmul(flatten, tf.transpose(flatten))
     
@@ -27,8 +28,9 @@ Image Style Transfer Using Convolutional Neural Networks
     * alpha * content_cost + beta * style_cost
 
 # result
-|Style|Content|Result|
+|Content|Style|Result|
 |:-------------------------:|:-------------------------:|:-------------------------:|
-|![style](./style/The_Great_Wave_off_Kanagawa.jpg) /style/The_Great_Wave_off_Kanagawa.jpg|![content](./style/udnie.jpg) /style/udnie.jpg|![result](./store/kanagawa_udnie.jpg) /store/kanagawa_udnie.jpg |
-|![style](./style/rain_princess.jpg) /style/rain_princess.jpg |![content](./style/The_Great_Wave_off_Kanagawa.jpg) /style/The_Great_Wave_off_Kanagawa.jpg|![result](./store/rain_kanagawa.jpg) /store/rain_kanagawa.jpg |
-|a |  b|c|
+|![content](./style/The_Great_Wave_off_Kanagawa.jpg) /style/The_Great_Wave_off_Kanagawa.jpg|![style](./style/udnie.jpg) /style/udnie.jpg|![result](./store/kanagawa_udnie.jpg) /store/kanagawa_udnie.jpg |
+|![content](./style/rain_princess.jpg) /style/rain_princess.jpg |![style](./style/The_Great_Wave_off_Kanagawa.jpg) /style/The_Great_Wave_off_Kanagawa.jpg|![result](./store/rain_kanagawa.jpg) /store/rain_kanagawa.jpg |
+|![content](./style/rain_princess.jpg) /style/rain_princess.jpg |![style](./style/udnie.jpg) /style/udnie.jpg|![result](./store/rain_udnie.jpg) /store/rain_udnie.jpg|
+|![content](./style/starry-night.jpg) /style/starry-night.jpg |![style](./style/rain_princess.jpg) /style/rain_princess.jpg|![result](./store/starry_rain.jpg) /store/rstarry_rain.jpg|
