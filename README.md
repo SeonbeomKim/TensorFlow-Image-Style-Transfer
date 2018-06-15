@@ -27,7 +27,7 @@ Image Style Transfer Using Convolutional Neural Networks
 ## total_cost
     * alpha * content_cost + beta * style_cost
 
-# result
+## result
 |Content|Style|Result|
 |:-------------------------:|:-------------------------:|:-------------------------:|
 |![content](./style/The_Great_Wave_off_Kanagawa.jpg) /style/The_Great_Wave_off_Kanagawa.jpg|![style](./style/udnie.jpg) /style/udnie.jpg|![result](./store/kanagawa_udnie.jpg) /store/kanagawa_udnie.jpg |
@@ -35,5 +35,5 @@ Image Style Transfer Using Convolutional Neural Networks
 |![content](./style/rain_princess.jpg) /style/rain_princess.jpg |![style](./style/udnie.jpg) /style/udnie.jpg|![result](./store/rain_udnie.jpg) /store/rain_udnie.jpg|
 |![content](./style/starry-night.jpg) /style/starry-night.jpg |![style](./style/rain_princess.jpg) /style/rain_princess.jpg|![result](./store/starry_rain.jpg) /store/starry_rain.jpg|
 
-# style reconstructions (https://arxiv.org/pdf/1508.06576.pdf 3page)
+## style reconstructions  # (https://arxiv.org/pdf/1508.06576.pdf 3page)
 
