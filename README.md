@@ -39,6 +39,8 @@ TensorFlow version == 1.4
 |![content](./style/starry-night.jpg) /style/starry-night.jpg |![style](./style/rain_princess.jpg) /style/rain_princess.jpg|![result](./store/starry_rain.jpg) /store/starry_rain.jpg|
 
 ## style reconstructions (https://arxiv.org/pdf/1508.06576.pdf 3page, starry-night)
+    * style_cost만 minimize 하도록 학습. (원본 이미지(style image)가 복원되지 않고 texture만 복원됨)
+    * content_cost만 minimize 하도록 학습 하는 경우에는 원본 이미지(content image)가 복원됨.
 |conv1_1|conv1_1~conv2_1|conv1_1~conv3_1|
 |:-------------------------:|:-------------------------:|:-------------------------:|
 |![conv1_1](./style_reconstructions/conv1.jpg) /style_reconstructions/conv1.jpg|![conv1_1~conv2_](./style_reconstructions/conv1~2.jpg) style_reconstructions/conv1~2.jpg|![conv1_1~conv3_1](./style_reconstructions/conv1~3.jpg) /style_reconstructions/conv1~3.jpg |
