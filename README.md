@@ -29,6 +29,6 @@ Image Style Transfer Using Convolutional Neural Networks
 # result
 |Style|Content|Result|
 |:-------------------------:|:-------------------------:|:-------------------------:|
-|![style](./style/The_Great_Wave_off_Kanagawa.jpg) /style/The_Great_Wave_off_Kanagawa.jpg|![content](./style/udnie.jpg) /style/udnie.jpg|![result](./store/kanagawa_udnie.jpg) ./store/kanagawa_udnie.jpg |
-|<img width="1604" alt="screen shot 2017-08-07 at 12 18 15 pm" src="https://user-images.githubusercontent.com/297678/29892310-03e92256-8d83-11e7-9b58-986dcb6f702e.png">  |  <img width="1604" alt="screen shot 2017-08-07 at 12 18 15 pm" src="https://user-images.githubusercontent.com/297678/29892310-03e92256-8d83-11e7-9b58-986dcb6f702e.png">|<img width="1604" alt="screen shot 2017-08-07 at 12 18 15 pm" src="https://user-images.githubusercontent.com/297678/29892310-03e92256-8d83-11e7-9b58-986dcb6f702e.png">|
-|<img width="1604" alt="screen shot 2017-08-07 at 12 18 15 pm" src="https://user-images.githubusercontent.com/297678/29892310-03e92256-8d83-11e7-9b58-986dcb6f702e.png">  |  <img width="1604" alt="screen shot 2017-08-07 at 12 18 15 pm" src="https://user-images.githubusercontent.com/297678/29892310-03e92256-8d83-11e7-9b58-986dcb6f702e.png">|<img width="1604" alt="screen shot 2017-08-07 at 12 18 15 pm" src="https://user-images.githubusercontent.com/297678/29892310-03e92256-8d83-11e7-9b58-986dcb6f702e.png">|
+|![style](./style/The_Great_Wave_off_Kanagawa.jpg) /style/The_Great_Wave_off_Kanagawa.jpg|![content](./style/udnie.jpg) /style/udnie.jpg|![result](./store/kanagawa_udnie.jpg) /store/kanagawa_udnie.jpg |
+|![style](./style/rain_princess.jpg) /style/rain_princess.jpg |![content](./style/The_Great_Wave_off_Kanagawa.jpg) /style/The_Great_Wave_off_Kanagawa.jpg|![result](./store/rain_kanagawa.jpg) /store/rain_kanagawa.jpg |
+|a |  b|c|
