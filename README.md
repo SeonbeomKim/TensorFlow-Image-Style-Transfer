@@ -9,6 +9,7 @@ Image Style Transfer Using Convolutional Neural Networks
     * http://www.vlfeat.org/matconvnet/pretrained/ 에서 imagenet-vgg-verydeep-19 다운로드.
 
 ## content_cost
+    * conv4_2 사용
     * tf.reduce_sum(tf.square(noise_conv4_2 - content_conv4_2)))/2
     
 ## style_cost
