@@ -1,7 +1,7 @@
 # TensorFlow-Image-Style-Transfer
 Image Style Transfer Using Convolutional Neural Networks
 
-Tensorflow 1.4 version.
+TensorFlow version == 1.4
 
 ## paper  
     * http://openaccess.thecvf.com/content_cvpr_2016/papers/Gatys_Image_Style_Transfer_CVPR_2016_paper.pdf  
@@ -16,7 +16,7 @@ Tensorflow 1.4 version.
     
 ## style_cost
     * conv1_1, conv2_1, conv3_1, conv4_1, conv5_1 전부 사용
-    * tf.reduce_sum(tf.square(gram_matrix(noise_conv1_1) - gram_matrix(style_conv1_1))) / (4*N*N*M*M) * 0.2(=w)
+    * tf.reduce_sum(tf.square(gram_matrix(noise_conv1_1) - gram_matrix(style_conv1_1))) / (4*N*N*M*M) * 0.2(== w)
         * N: # filter, M: H(height)*W(width)
     * 위 식을 conv1_1, conv2_1, ..., conv5_1에 관해서 계산 후 tf.reduce_sum으로 더함.
 
