@@ -41,5 +41,5 @@ Image Style Transfer Using Convolutional Neural Networks
 |![conv1_1](./style_reconstructions/conv1.jpg) /style_reconstructions/conv1.jpg|![conv1_1~conv2_](./style_reconstructions/conv1~2.jpg) style_reconstructions/conv1~2.jpg|![conv1_1~conv3_1](./style_reconstructions/conv1~3.jpg) /style_reconstructions/conv1~3.jpg |
 
 |conv1_1~conv4_1|conv1_1~conv5_1|
-|:-------------------------:|:-------------------------:|:-------------------------:|
+|:-------------------------:|:-------------------------:|
 |![conv1_1~conv4_1](./style_reconstructions/conv1~4.jpg) /style_reconstructions/conv1~4.jpg|![conv1_1~conv5_](./style_reconstructions/conv1~5.jpg) style_reconstructions/conv1~5.jpg|
