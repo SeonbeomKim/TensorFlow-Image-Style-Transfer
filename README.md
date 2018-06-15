@@ -6,6 +6,8 @@ TensorFlow version == 1.4
 ## paper  
     * http://openaccess.thecvf.com/content_cvpr_2016/papers/Gatys_Image_Style_Transfer_CVPR_2016_paper.pdf  
     * https://arxiv.org/pdf/1508.06576.pdf
+        * 미리 학습된 VGG19 모델에 tf.variable의 noise 이미지를 넣고, 원하는 content, style 이미지를 반영하도록 학습.
+        * 다른 Variable은 학습 되지 않도록 고정. (올려둔 코드에서는 noise만 variable이므로 따로 고정 하지 않음)
 
 ## pretrained VGG19 network
     * http://www.vlfeat.org/matconvnet/pretrained/ 에서 imagenet-vgg-verydeep-19 다운로드.
