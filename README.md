@@ -40,7 +40,6 @@ TensorFlow version == 1.4
 
 ## style reconstructions (https://arxiv.org/pdf/1508.06576.pdf 3page, starry-night)
     * style_cost만 minimize 하도록 학습. (원본 이미지(style image)가 복원되지 않고 texture만 복원됨)
-    * content_cost만 minimize 하도록 학습 하는 경우에는 원본 이미지(content image)가 복원됨.
 |conv1_1|conv1_1~conv2_1|conv1_1~conv3_1|
 |:-------------------------:|:-------------------------:|:-------------------------:|
 |![conv1_1](./style_reconstructions/conv1.jpg) /style_reconstructions/conv1.jpg|![conv1_1~conv2_](./style_reconstructions/conv1~2.jpg) style_reconstructions/conv1~2.jpg|![conv1_1~conv3_1](./style_reconstructions/conv1~3.jpg) /style_reconstructions/conv1~3.jpg |
@@ -48,3 +47,7 @@ TensorFlow version == 1.4
 |conv1_1~conv4_1|conv1_1~conv5_1|
 |:-------------------------:|:-------------------------:|
 |![conv1_1~conv4_1](./style_reconstructions/conv1~4.jpg) /style_reconstructions/conv1~4.jpg|![conv1_1~conv5_](./style_reconstructions/conv1~5.jpg) style_reconstructions/conv1~5.jpg|
+
+## content reconstructions 
+    * content_cost만 minimize 하도록 학습 하는 경우에는 원본 이미지(content image)가 복원됨
+    * 복원된 이미지는 원본과 동일하므로, 이미지 삽입 생략
