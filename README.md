@@ -38,7 +38,7 @@ TensorFlow version == 1.4
 ## result
 |Content|Style|Result|
 |:-------------------------:|:-------------------------:|:-------------------------:|
-|![content](./style/The_Great_Wave_off_Kanagawa.jpg =250x250) /style/The_Great_Wave_off_Kanagawa.jpg|![style](./style/udnie.jpg) /style/udnie.jpg|![result](./store/kanagawa_udnie.jpg) /store/kanagawa_udnie.jpg |
+|![content](./style/The_Great_Wave_off_Kanagawa.jpg ) /style/The_Great_Wave_off_Kanagawa.jpg|![style](./style/udnie.jpg) /style/udnie.jpg|![result](./store/kanagawa_udnie.jpg) /store/kanagawa_udnie.jpg |
 |![content](./style/rain_princess.jpg) /style/rain_princess.jpg |![style](./style/The_Great_Wave_off_Kanagawa.jpg) /style/The_Great_Wave_off_Kanagawa.jpg|![result](./store/rain_kanagawa.jpg) /store/rain_kanagawa.jpg |
 |![content](./style/rain_princess.jpg) /style/rain_princess.jpg |![style](./style/udnie.jpg) /style/udnie.jpg|![result](./store/rain_udnie.jpg) /store/rain_udnie.jpg|
 |![content](./style/starry-night.jpg) /style/starry-night.jpg |![style](./style/rain_princess.jpg) /style/rain_princess.jpg|![result](./store/starry_rain.jpg) /store/starry_rain.jpg|
